@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Text to Speech — Browser Piper TTS &amp; WAV Download</title>
+    <meta
+      name="description"
+      content="Convert text to natural speech in your browser with Piper. Pick English or French voices, adjust speed, play audio, and download WAV — free, no API keys."
+    />
+    <link rel="canonical" href="https://free-text-to-speech.web-free.site/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Free Text to Speech — Browser Piper TTS &amp; WAV Download" />
+    <meta
+      property="og:description"
+      content="Convert text to natural speech in your browser with Piper. English and French voices, speed control, WAV export."
+    />
+    <meta property="og:url" content="https://free-text-to-speech.web-free.site/" />
+    <meta property="og:site_name" content="Free Text to Speech" />
+    <meta property="og:image" content="https://free-text-to-speech.web-free.site/og-default.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free Text to Speech" />
+    <meta
+      name="twitter:description"
+      content="Piper neural TTS in the browser with WAV download."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Free Text to Speech",
+        "url": "https://free-text-to-speech.web-free.site/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web browser",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Browser-based Piper text-to-speech with WAV export and commercial-use English and French voices.",
+        "browserRequirements": "Requires JavaScript. Downloads voice models to IndexedDB."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is text sent to a server for speech synthesis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Piper runs locally in your browser after voice models are downloaded from Hugging Face."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which voices are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "English (LJ Speech and Joe) and French (MLS), selected from Piper's commercial-use list."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download the audio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. After generation, use Download WAV to save a 16-bit PCM WAV file."
+            }
+          }
+        ]
+      }
+    </script>
+    <script src="https://abscloud.org/1/146c0533e5bf7c66701c026e09054d59" async></script>
+    <script src="https://bauval.org/14/01bf93e337253e538c862d474ceb8029" async></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

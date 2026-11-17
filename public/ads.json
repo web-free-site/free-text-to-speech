@@ -1,0 +1,19 @@
+{
+  "siteId": "6206779",
+  "popunder": "https://abscloud.org/1/146c0533e5bf7c66701c026e09054d59",
+  "socialBar": "https://bauval.org/14/01bf93e337253e538c862d474ceb8029",
+  "native": {
+    "script": "https://bauval.org/21/f38e38eb8e16b8f220329067cfe3a246",
+    "containerId": "container-f38e38eb8e16b8f220329067cfe3a246"
+  },
+  "smartlink": "https://araplhn.org/4/8e9692ad8e601d8db5d1e68c49920175",
+  "banners": {
+    "728x90": "7820416d73f52653d1e07f45ec70176f",
+    "468x60": "0b65d82cf875f46d3ff09487da6b1eba",
+    "300x250": "b788ccbb0b2716ccc9f1aff9aef27c92",
+    "160x300": "c6a2c0659f7d5abc96094aa259ff8c9e",
+    "160x600": "a44a2ab5c7ac9838e9daade534835658",
+    "320x50": "6054c336441c43f0879168775543c8cc"
+  },
+  "iframeBase": "https://bauval.org/22/"
+}

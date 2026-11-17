@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --muted: #475569;
+  --link: #1d4ed8;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --fg: #f1f5f9;
+    --muted: #94a3b8;
+    --card: #1e293b;
+    --border: #334155;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+a { color: var(--link); }
+header.site-header {
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--card) 90%, transparent);
+  padding: 1rem 1.25rem;
+}
+header .wrap, main.wrap, footer .wrap {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+header h1 { margin: 0; font-size: 1.25rem; }
+header p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.9rem; }
+main.wrap { padding: 2rem 1.25rem 3rem; }
+main h1 { font-size: 1.75rem; margin-top: 0; }
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-align: center;
+}
+footer nav { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; justify-content: center; margin-bottom: 1rem; }
+.faq dt { font-weight: 600; margin-top: 1rem; }
+.faq dd { margin: 0.35rem 0 0 0; color: var(--muted); }
+.smartlink { font-size: 0.75rem; opacity: 0.85; }
