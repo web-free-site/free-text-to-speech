@@ -1,7 +1,12 @@
 name = "free-text-to-speech"
+account_id = "c26dbba499d049a1051c152c720cf4c5"
 compatibility_date = "2025-01-01"
 
 [assets]
 directory = "./dist"
 html_handling = "auto-trailing-slash"
 not_found_handling = "none"
+
+[[routes]]
+pattern = "free-text-to-speech.web-free.site"
+custom_domain = true
