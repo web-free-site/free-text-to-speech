@@ -60,6 +60,7 @@ export function pageHtml({ title, description, path, bodyHtml, extraJsonLd = '' 
       <p class="smartlink"><a href="https://araplhn.org/4/8e9692ad8e601d8db5d1e68c49920175" rel="nofollow sponsored">Partnership link</a></p>
     </div>
   </footer>
+<script src="/wf-ads.js" defer></script>
 </body>
 </html>`;
 }
