@@ -59,6 +59,45 @@ const pages = [
     `,
   },
   {
+    dir: 'how-to-make-a-voiceover-for-a-video-with-text-to-speech',
+    path: '/how-to-make-a-voiceover-for-a-video-with-text-to-speech/',
+    title: 'How to Make a Voiceover for a Video with Text to Speech | Free Text to Speech',
+    description:
+      'Write a script, generate a natural voice in your browser, download WAV files and line them up with your video in any editor. Free, no account.',
+    jsonLd: `<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to make a voiceover for a video with text to speech", "description": "Write a script, generate a natural voice in your browser, download WAV files and line them up with your video in any editor. Free, no account.", "inLanguage": "en", "url": "https://free-text-to-speech.web-free.site/how-to-make-a-voiceover-for-a-video-with-text-to-speech/", "tool": [{"@type": "HowToTool", "name": "Free Text to Speech"}, {"@type": "HowToTool", "name": "A video editor"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Write the script per scene", "text": "Split your narration into short paragraphs, one per scene or slide."}, {"@type": "HowToStep", "position": 2, "name": "Pick a voice and speed", "text": "Choose an English or French voice and set the reading speed, then test a short line."}, {"@type": "HowToStep", "position": 3, "name": "Generate and download WAV", "text": "Generate each paragraph and click Download WAV, renaming the files in order."}, {"@type": "HowToStep", "position": 4, "name": "Place the audio in your editor", "text": "Import the WAV files into your video editor and align each one with its scene."}]}</script>`,
+    body: `
+      <h1>How to make a voiceover for a video with text to speech</h1>
+      <p>A synthetic voice is a quick way to narrate a tutorial, a slideshow, a product demo or a social clip when you cannot record yourself. Free Text to Speech generates the audio in your browser and saves it as WAV, which every common video editor can import.</p>
+      <h2>1. Write the script for the ear</h2>
+      <ul>
+        <li>Split the narration into short paragraphs, <strong>one per scene or slide</strong>. Short pieces are easier to re-generate and to align later.</li>
+        <li>Use short sentences and punctuation: commas and full stops create the natural pauses in the voice.</li>
+        <li>Write numbers, abbreviations and brand names the way they should be spoken (for example “twenty twenty-six” or “A P I”) if the first try sounds wrong.</li>
+      </ul>
+      <h2>2. Choose a voice and a speed</h2>
+      <p>On the <a href="/">home page</a>, pick an English (US) or French voice and set the speed (0.5× to 2×). Test with one sentence first: the first generation for a voice downloads the model, later ones are faster because it is cached on your device.</p>
+      <h2>3. Generate and download each part</h2>
+      <ol>
+        <li>Paste the first paragraph and click <strong>Generate</strong>, then listen.</li>
+        <li>If a word sounds wrong, change the spelling or punctuation and generate again.</li>
+        <li>Click <strong>Download WAV</strong> and rename the file in order, for example <code>01-intro.wav</code>, <code>02-step-one.wav</code>.</li>
+        <li>Repeat for every paragraph with the same voice and speed so the narration stays consistent.</li>
+      </ol>
+      <h2>4. Put the audio under your video</h2>
+      <p>Import the WAV files into your editor (for example Shotcut, Kdenlive, DaVinci Resolve, iMovie, CapCut or Clipchamp), drop each one on the audio track under its scene, and trim the silence at the ends. Lower the background music a little so the voice stays clear, then export the video as usual. WAV files are large; your editor compresses the audio when it exports the final video.</p>
+      <h2>5. Check the voice license before publishing</h2>
+      <p>Each voice comes from a dataset with its own license, and some require attribution. See the <a href="/about/">About</a> page before you publish a video commercially, and consider telling viewers that the narration is synthetic.</p>
+      <h2>FAQ</h2>
+      <dl class="faq">
+        <dt>Is my script uploaded?</dt>
+        <dd>No. The voice is generated on your device; only the voice model is downloaded once from Hugging Face.</dd>
+        <dt>Can I export MP3 instead of WAV?</dt>
+        <dd>This tool exports WAV. Most video editors accept WAV directly, so no conversion is needed.</dd>
+      </dl>
+      <p>Related guides: <a href="/how-to-convert-text-to-speech-in-the-browser/">how to convert text to speech in the browser</a> and <a href="/how-to-download-text-to-speech-as-a-wav-file/">how to download text to speech as a WAV file</a>.</p>
+    `,
+  },
+  {
     dir: 'about',
     path: '/about/',
     title: 'About Free Text to Speech',
@@ -137,6 +176,7 @@ for (const p of pages) {
     description: p.description,
     path: p.path,
     bodyHtml: p.body,
+    extraJsonLd: p.jsonLd || '',
   });
   fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
   console.log('Wrote', p.dir);

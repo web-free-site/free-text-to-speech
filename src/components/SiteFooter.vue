@@ -8,6 +8,7 @@ const siteUrl = 'https://free-text-to-speech.web-free.site';
       <nav class="flex flex-wrap gap-x-4 gap-y-2 justify-center" aria-label="Footer">
         <a :href="`${siteUrl}/how-to-convert-text-to-speech-in-the-browser/`" class="hover:text-blue-600">How to convert text to speech</a>
         <a :href="`${siteUrl}/how-to-download-text-to-speech-as-a-wav-file/`" class="hover:text-blue-600">Download as WAV</a>
+        <a :href="`${siteUrl}/how-to-make-a-voiceover-for-a-video-with-text-to-speech/`" class="hover:text-blue-600">Video voiceover</a>
         <a :href="`${siteUrl}/about/`" class="hover:text-blue-600">About</a>
         <a :href="`${siteUrl}/contact/`" class="hover:text-blue-600">Contact</a>
         <a :href="`${siteUrl}/privacy/`" class="hover:text-blue-600">Privacy</a>

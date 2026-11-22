@@ -51,6 +51,7 @@ export function pageHtml({ title, description, path, bodyHtml, extraJsonLd = '' 
         <a href="/">Home</a>
         <a href="/how-to-convert-text-to-speech-in-the-browser/">How-to</a>
         <a href="/how-to-download-text-to-speech-as-a-wav-file/">WAV download</a>
+        <a href="/how-to-make-a-voiceover-for-a-video-with-text-to-speech/">Video voiceover</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
         <a href="/privacy/">Privacy</a>
