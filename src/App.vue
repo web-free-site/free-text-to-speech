@@ -13,6 +13,7 @@ import SpeedControl from './components/SpeedControl.vue';
 import ThemeToggle from './components/ThemeToggle.vue';
 import AudioChunk from './components/AudioChunk.vue';
 import SiteFooter from './components/SiteFooter.vue';
+import HomeSeoSection from './components/HomeSeoSection.vue';
 import AdBanner from './components/AdBanner.vue';
 import ads from '../public/ads.json';
 
@@ -331,15 +332,39 @@ onUnmounted(() => {
           <AdBanner :slot-key="ads.banners['728x90']" :width="728" :height="90" label="Mid-page banner" />
         </div>
 
-        <section class="prose prose-sm dark:prose-invert max-w-none text-gray-700 dark:text-gray-300" aria-labelledby="faq-heading">
-          <h2 id="faq-heading" class="text-lg font-semibold">Frequently asked questions</h2>
+        <HomeSeoSection />
+
+        <section
+          class="bg-white/80 dark:bg-gray-900/80 backdrop-blur rounded-2xl shadow-lg border border-white/30 dark:border-gray-700/50 p-6 prose prose-sm dark:prose-invert max-w-none text-gray-700 dark:text-gray-300"
+          aria-labelledby="faq-heading"
+        >
+          <h2 id="faq-heading" class="text-lg font-semibold !mt-0">Frequently asked questions</h2>
           <dl>
-            <dt class="font-medium mt-3">Is synthesis done on my device?</dt>
-            <dd class="text-sm">Yes. Text never leaves your browser for TTS processing.</dd>
-            <dt class="font-medium mt-3">Can I use the WAV commercially?</dt>
-            <dd class="text-sm">Depends on the voice license — see <a href="/about/" class="text-blue-600">About</a>.</dd>
-            <dt class="font-medium mt-3">Why two English voices?</dt>
-            <dd class="text-sm">LJ Speech (public domain) and Joe (CC0) are both approved for commercial use.</dd>
+            <dt class="font-medium mt-4">Is my text sent to a server for speech synthesis?</dt>
+            <dd class="text-sm">
+              No. Piper runs locally in your browser after voice models download from Hugging Face. Your
+              passage is not uploaded for TTS processing.
+            </dd>
+            <dt class="font-medium mt-4">Which voices can I use?</dt>
+            <dd class="text-sm">
+              English (LJ Speech and Joe) and French (MLS), selected from Piper’s commercial-use list. Use
+              preview to hear each voice before generating long text.
+            </dd>
+            <dt class="font-medium mt-4">Can I download the audio as a file?</dt>
+            <dd class="text-sm">
+              Yes. After generation finishes, use Download WAV to save a 16-bit PCM WAV file named
+              speech.wav.
+            </dd>
+            <dt class="font-medium mt-4">Do I need an account or API key?</dt>
+            <dd class="text-sm">
+              No sign-up is required. The tool is free to use in a modern browser with JavaScript enabled.
+            </dd>
+            <dt class="font-medium mt-4">Can I use the WAV in commercial projects?</dt>
+            <dd class="text-sm">
+              It depends on the voice license and your use case. See
+              <a href="/about/" class="text-blue-600 dark:text-blue-400">About</a> and Piper’s commercial-use
+              documentation before publishing paid or monetized content.
+            </dd>
           </dl>
         </section>
       </div>

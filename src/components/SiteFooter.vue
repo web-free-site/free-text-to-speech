@@ -28,7 +28,7 @@ const siteUrl = 'https://free-text-to-speech.web-free.site';
         </p>
         <p>
           More free browser tools:
-          <a href="https://web-free.site" class="text-blue-600 hover:underline" rel="noopener">web-free.site</a>
+          <a href="https://web-free.site/?ref=free-text-to-speech" class="text-blue-600 hover:underline" rel="noopener">web-free.site</a>
         </p>
       </div>
       <p class="text-center text-xs text-gray-500">© {{ new Date().getFullYear() }} Free Text to Speech</p>
