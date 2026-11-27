@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/build-static-pages.mjs",
-    "build": "vite build && node scripts/inject-more-tools.mjs && node scripts/inject-hub-legal.mjs",
+    "build": "vite build && node scripts/inject-homepage-prerender.mjs && node scripts/inject-more-tools.mjs && node scripts/inject-hub-legal.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
